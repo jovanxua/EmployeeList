@@ -24,7 +24,16 @@ export default class EmployeeList extends Component {
       realm: null,
       _aEmployeeList: [],
       _oActiveEmployee: null,
-      _bShowForm: false
+      _bShowForm: false,
+      _oDefaultEmployeeInfo: {
+        firstname: '',
+        middlename: '',
+        lastname: '',
+        birthday: '',
+        address: '',
+        position: '',
+        salary: ''
+      }
     };
   }
 

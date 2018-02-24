@@ -8,7 +8,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 import styles from './styles';
-import FormModal from '../components/FormModal';
+import FormContainer from '../components/FormContainer';
 
 export default class EmployeeForm extends Component {
     constructor(props) {
@@ -18,10 +18,6 @@ export default class EmployeeForm extends Component {
         };
     }
 
-    componentWillMount() {
-
-    }
-
     _onSubmit = () => {
 
     }
@@ -29,9 +25,7 @@ export default class EmployeeForm extends Component {
     render(){
         console.log('rendering form')
         return(
-            <View style={styles.container}>
-                <Text>Hi!</Text>
-            </View>
+            <FormContainer/>
         )
     }
 }
